@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	nums := [3]int{1, 8, 3}
+
+	sum := 0
+	for _, num := range nums {
+		sum += num
+	}
+	fmt.Println("Soma dos valores no Array:", sum)
+}
