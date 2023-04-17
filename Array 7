@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+//Crie um Slice de inteiros com o tamanho 5.
+//Em seguida, solicite ao usuário que informe um número inteiro.
+//Adicione esse número ao Slice apenas se ele não estiver presente.
+//Imprima o Slice resultante.
+
+func main() {
+	var valor int
+	Slice1 := []int{1, 2, 3, 4, 5}
+	fmt.Println("Informe um valor desejado", valor)
+	fmt.Scan(&valor)
+
+	for _, elementos := range Slice1 {
+		if elementos == valor {
+			fmt.Print("Seu número já existe na lista")
+			break
+		} else if elementos != valor {
+			SliceIncre := append(Slice1, valor)
+			fmt.Println(SliceIncre)
+		} else {
+			fmt.Println("Você n digitou um valor valido")
+		}
+
+	}
+
+}
