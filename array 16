@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	slice := [10]int{1, 5, 8, 12, 14, 20, 34, 50, 45, 11}
+	fmt.Println(slice)
+	result := []int{}
+	for _, x := range slice {
+		if x%2 == 0 {
+			result = append(result, x)
+		}
+	}
+	fmt.Println(result)
+}
