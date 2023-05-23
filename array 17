@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	slice := [10]int{7, 1, 9, 12, 15, 23, 34, 51, 78, 13}
+	fmt.Println(ele)
+	soma := 0
+	for i := 1; i < len(slice); i += 2 {
+		soma += slice[i]
+	}
+	fmt.Println(soma)
+}
