@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var slice = [10]float64{1.5, 5.3, 5.5, 8.5, 7.7, 8.6, 10.5, 10.2, 13.7, 9.0}
+	fmt.Println(ele)
+	var result = []float64{}
+	for _, eles := range slice {
+		if eles > 5 {
+			result = append(result, slice)
+		}
+	}
+	fmt.Println(result)
+}
